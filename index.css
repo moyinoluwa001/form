@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+    color: white;
+    
+}
+form {
+    width: 40%;
+    background-color: whitesmoke ;
+    padding-top: 60px;
+    padding-right: 0px;
+
+}
+.container {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+    right: 20px;
+    box-shadow: 0 0 30 4px whitesmoke;
+    
+}
+
+.allbox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: auto;
+} 
+
+ #checkbox {
+    width: 20px;
+}
+
+#submit {
+    width: 60%;
+    border: none;
+    padding: 13px 0px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+}
+
+.here {
+    font-size: 17px;
+    width: 50%;
+    color: red;
+}
+
+div a i {
+    color: white;
+    background-color: slategrey;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.social {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#button {
+    margin-left: 70%;
+    width: 30%;
+    padding: 100px;
+    background-color: red;
+    border: none;
+    position: relative;
+    right: 0px;
+}
+
+
+#button1 {
+    width: 60%;
+    outline: none;
+    padding-bottom: 190px;
+    padding: 100px;
+    background-color:slategrey;
+    border: none;
+    position: relative;
+    color: red;
+    margin-top: 19.9%;
+    bottom: 0px;
+}
+
+
+.account {
+    font-size: 17px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+input {
+    border-radius: 50px;
+    font-size:16px;
+    padding: 13px 0px;
+    width: 60%;
+    outline: none;
+    border: 2px inset black ;
+    padding-left: 90px;
+    text-align: left;
+}
+.log {
+    color: rgb(41, 20, 20);
+    font-size: 40px ;
+    border-bottom: 5px solid red;
+    max-width: fit-content;
+}
+
+label .name {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.total {
+    margin-left: 40px;
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+
+

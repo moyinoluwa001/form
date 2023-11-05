@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body class="allbox">
+       <div class="container-fluid">
+        <button id="button"></button>
+        <button id="button1"></button>
+       </div>
+
+         <div class="container"> 
+            
+                <img src="photossss/form.png" alt="">
+          
+    
+       
+             <form id="form"  action="">
+
+                    <h4 class="log">LOGIN</h4>
+                        <div>
+                            <br>
+                            <label for="" class="name">Username</label><br>
+                           
+                            <input type="text" name="" oninput="myFunctions()" id="username" value="" > 
+                        
+                           
+                            <p class="emailError" style="color: red;"></p>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="" class="name">Password</label><br>
+                            <input type="password" name="" oninput="myFunction()" id="password" value=""  >
+                            <p class="passwordError" style="color: red;"></p>
+
+                        </div>
+                        <br>
+                        <div>
+                            <input type="checkbox" name="" id="checkbox">Remember me
+                        </div>
+                        <br>
+
+
+                        <button type="submit" id="submit">Sign in</button>
+
+                        <br><br>
+
+                        <!-- <mark>HWllo</mark> -->
+
+                
+                        <p class="account">Don't have an account? <a href="" class="here">Sign up</a></p>
+                        
+                        
+                       <div class="total">
+                        <p class="social">Login with social media</p>
+                        <div>
+                            <a href="" class="face"><i style="background-color: crimson;" class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                       </div>
+                        
+             </form>
+
+       
+
+         </div> 
+
+        
+
+
+    <script>
+       
+       function myFunctions() {
+        const username = document.getElementById('username').value;
+        const userErr = document.querySelector('.emailError');
+        userErr.innerHTML = ""
+
+
+        
+
+        
+        const myForm = document.getElementById('form');
+        myForm.addEventListener('submit', function(e) {
+        e.preventDefault()
+    })
+    
+
+
+        try {
+            if (username == "") throw " should not be empty"
+            if (username.toString().length<3) throw "is less than 3 characters"
+            if (username.toString().length>12) throw "is more than 12 characters"
+            if (!isNaN(username)) throw "cannot be numbers"
+
+
+           
+
+
+
+
+
+        } catch (error) {
+            userErr.innerHTML = "Username " + error
+        }
+
+
+       
+
+       }
+
+       function myFunction() {
+
+        const password = document.getElementById('password').value;
+        const passError = document.querySelector('.passwordError');
+        passError.innerHTML = ""
+
+
+
+
+        const myForm = document.getElementById('form');
+        myForm.addEventListener('submit', function(e) {
+        e.preventDefault()
+        
+       })
+
+       try {
+            if (password == "") throw "should not be empty"
+            if (!/[a-z]/.test(password)) throw "must contain at least 1 lowercase letter"
+            if (!/[A-Z]/.test(password)) throw "must contain at least 1 upperrcase letter"            
+            if (password.toString().lenght<8) throw "cannot be less than eight words"
+            if (password.toString().lenght>12) throw "cannot be greater than twelve words"
+
+        } catch (error) {
+            passError.innerHTML = "Password " + error
+
+        }
+
+    }
+
+
+      
+    
+
+        
+    
+
+    </script>
+</body>
+</html>
+
